@@ -5,18 +5,15 @@ $dark-raspberry: hsl(332, 51%, 32%);
 // ### Neutral
 
 $white: hsl(0, 0%, 100%);
-$rose-White: hsl(330, 100%, 98%);
-$eggshell: hsl(30, 54%, 90%);
-$light-grey: hsl(30, 18%, 87%);
+$rose-white: hsl(330, 100%, 98%);
+$eggshell: hsla(31, 54%, 90%);
+$light-grey: hsla(30, 18%, 87%, 0.643);
 $nenge-brown: hsl(30, 10%, 34%);
 $dark-charcoal: hsl(24, 5%, 18%);
 
-// ### Body Copy
-
-$font-paragraph: 1em;
-
-// - Family: [Young Serif](https://fonts.google.com/specimen/Young+Serif)
-// - Weights: 400
-
+$body: 1em;
+$lg: 2.5em;
+$rg: 1.8em;
+$md: 1.3em;
 // - Family: [Outfit](https://fonts.google.com/specimen/Outfit)
 // - Weights: 400, 600, 700

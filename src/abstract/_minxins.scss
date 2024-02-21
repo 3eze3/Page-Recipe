@@ -1,7 +1,23 @@
-@mixin flex($align-items, $justify-content, $direction, $gap) {
+@mixin center() {
+  display: grid;
+  place-content: center;
+}
+
+@mixin flex(
+  $align-items: flex-start,
+  $justify-content: flex-start,
+  $direction,
+  $gap
+) {
   display: flex;
   flex-direction: $direction;
   align-items: $align-items;
   justify-content: $justify-content;
   gap: $gap;
+}
+
+@mixin break-media($break-point, $break) {
+  @media screen and ($break-point: $break) {
+    @content;
+  }
 }
