@@ -1,0 +1,16 @@
+@use "../abstract/variables" as color_bg;
+.nutrition {
+  width: 100%;
+  &__table {
+    margin-block: 0.95rem;
+    width: 100%;
+  }
+  &__head,
+  &__data {
+    text-align: left;
+    border-bottom: 1px solid color_bg.$light-grey;
+    padding: 0.7rem 1.4rem;
+    color: color_bg.$nenge-brown;
+    text-align: left;
+  }
+}
