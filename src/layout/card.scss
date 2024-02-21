@@ -1,7 +1,7 @@
 @use "../abstract/variables" as color_bg;
 @use "../abstract/minxins" as layout;
 .container {
-  margin-block: 7.5rem;
+  margin: 7.5rem 0 8.5rem;
   @include layout.break-media(max-width, 480px) {
     margin-block: 0;
   }

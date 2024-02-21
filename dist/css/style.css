@@ -132,7 +132,7 @@ svg {
 }
 
 .container {
-  margin-block: 7.5rem;
+  margin: 7.5rem 0 8.5rem;
 }
 @media screen and (max-width: 480px) {
   .container {
