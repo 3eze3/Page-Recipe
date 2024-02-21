@@ -1,43 +1,75 @@
+@use "../abstract/variables" as color_bg;
+@use "../abstract/minxins" as layout;
+@font-face {
+  font-family: "Outfit wght";
+  src: url(../assets/fonts/outfit/Outfit-VariableFont_wght.ttf);
+}
+
+@font-face {
+  font-family: "Outfit sm";
+  src: url(../assets/fonts/outfit/static/Outfit-SemiBold.ttf);
+}
+
+@font-face {
+  // Titulos
+  font-family: "Young-serif";
+  src: url(../assets/fonts/young-serif/YoungSerif-Regular.ttf);
+}
 body {
-  min-height: 100vh;
-  font-size: 100%;
+  min-height: 100dvh;
+  font-size: color_bg.$body;
+  font-family: "Outfit wght";
+  @include layout.center();
+  background-color: mix(color_bg.$eggshell, color_bg.$light-grey, 85%);
   hyphens: manual;
   font-smooth: always;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-p a {
-  display: inline;
+h1 {
+  font-size: color_bg.$lg;
+  color: color_bg.$dark-charcoal;
+  margin-bottom: 1rem;
+}
+
+td {
+  color: color_bg.$nutmeg;
 }
 
 h1,
-h2,
-h3,
-h4,
-h5,
-h6,
+h2 {
+  font-family: "Young-serif";
+  font-weight: 400;
+}
+
+h2 {
+  color: color_bg.$nutmeg;
+  font-size: color_bg.$rg;
+  margin-bottom: 1rem;
+}
+
+p {
+  line-height: 1.45em;
+}
+
 p,
 span,
-a,
-strong,
-blockquote,
-i,
+li {
+  color: color_bg.$nenge-brown;
+}
+
 b,
-u,
-em {
-  font-size: inherit;
-  font-weight: inherit;
-  font-style: inherit;
-  text-decoration: none;
-  color: inherit;
+td,
+.preparation__title {
+  font-family: "Outfit sm";
 }
 
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
-  content: "";
-  content: none;
+.preparation__title {
+  color: color_bg.$dark-raspberry;
+  font-size: color_bg.$md;
 }
 
+.introduction__preparation {
+  background-color: color_bg.$rose-white;
+}
