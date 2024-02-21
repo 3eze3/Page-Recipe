@@ -190,7 +190,7 @@ svg {
 .nutrition__head, .nutrition__data {
   text-align: left;
   border-bottom: 1px solid hsla(30deg, 18%, 87%, 0.643);
-  padding: 0.7rem 1.4rem;
+  padding: 0.68rem 1.4rem;
   color: hsl(30deg, 10%, 34%);
   text-align: left;
 }
