@@ -8,44 +8,44 @@
       type="image/png"
       sizes="32x32"
       href="./assets/images/favicon-32x32.png" />
+    <link rel="stylesheet" href="./css/style.css" />
     <title>Recipe page</title>
   </head>
   <body>
     <main class="container">
-      <div class="container__image">
-        <img src="../dist/assets/images/image-omelette.jpe" alt="imagen 1" />
-      </div>
-      <article class="container__content content">
-        <header class="content__header">
+      <div class="container__content content">
+        <img
+          class="container__image"
+          src="../dist/assets/images/image-omelette.jpeg"
+          alt="Omelette image" />
+        <section class="content__introduction introduction">
           <h1 class="content__title content__title--main">
             Simple Omelette Recipe
           </h1>
-        </header>
-        <section class="content__introduction introduction">
-          <h2 class="content__title">Introduntion</h2>
           <p class="introduction__description">
             An easy and quick dish, perfect for any meal. This classic omelette
             combines beaten eggs cooked to perfection, optionally filled with
             your choice of cheese, vegetables, or meats.
           </p>
-          <div class="introduction__wrapper">
-            <span class="introduction__preparation">Preparation time </span>
-            <ul class="introduction__list">
-              <li class="introduction__item">
+          <section class="introduction__preparation preparation">
+            <h2 class="preparation__title">Preparation time</h2>
+            <ul class="preparation__list">
+              <li class="preparion__item">
                 <b>Total:</b> Approximately 10 minutes
               </li>
-              <li class="introduction__item"><b>Preparation:</b> 5 minutes</li>
-              <li class="introduction__item"><b>Cooking:</b> 5 minutes</li>
+              <li class="preparation__item"><b>Preparation:</b> 5 minutes</li>
+              <li class="preparation__item"><b>Cooking:</b> 5 minutes</li>
             </ul>
-          </div>
+          </section>
         </section>
-        <section class="content__ingredients ingredientes">
+        <!--  -->
+        <section class="content__ingredients ingredients">
           <h2 class="content__title">Ingredients</h2>
-          <ul class="ingredientes__list">
-            <li class="ingredientes__ingredient">2-3 large eggs</li>
-            <li class="ingredientes__ingredient">Salt, to taste</li>
-            <li class="ingredientes__ingredient">Pepper, to taste</li>
-            <li class="ingredientes__ingredient">
+          <ul class="ingredients__list">
+            <li class="ingredients__ingredient">2-3 large eggs</li>
+            <li class="ingredients__ingredient">Salt, to taste</li>
+            <li class="ingredients__ingredient">Pepper, to taste</li>
+            <li class="ingredients__ingredient">
               1 tablespoon of butter or oil
             </li>
             <li class="ingredientes__ingredient">
@@ -54,34 +54,37 @@
           </ul>
         </section>
         <hr />
-        <section class="content__intruction intruction">
+        <!--  -->
+        <section class="content__instructions instructions">
           <h2 class="content__title">Instructions</h2>
-          <ol class="introduction__list">
-            <li class="introduction__step">
-              Beat the eggs: In a bowl, beat the eggs with a pinch of salt and
-              pepper until they are well mixed. You can add a tablespoon of
-              water or milk for a fluffier texture.
+          <ol class="instructions__list">
+            <li class="instructions__step">
+              <b>Beat the eggs:</b> In a bowl, beat the eggs with a pinch of
+              salt and pepper until they are well mixed. You can add a
+              tablespoon of water or milk for a fluffier texture.
             </li>
-            <li class="introduction__step">
-              Heat the pan: Place a non-stick frying pan over medium heat and
-              add butter or oil.
+            <li class="instructions__step">
+              <b>Heat the pan:</b> Place a non-stick frying pan over medium heat
+              and add butter or oil.
             </li>
-            <li class="introduction__step">
-              Cook the omelette: Once the butter is melted and bubbling, pour in
-              the eggs. Tilt the pan to ensure the eggs evenly coat the surface.
+            <li class="instructions__step">
+              <b>Cook the omelette:</b> Once the butter is melted and bubbling,
+              pour in the eggs. Tilt the pan to ensure the eggs evenly coat the
+              surface.
             </li>
-            <li class="introduction__step">
-              Add fillings (optional): When the eggs begin to set at the edges
-              but are still slightly runny in the middle, sprinkle your chosen
-              fillings over one half of the omelette.
+            <li class="instructions__step">
+              <b>Add fillings (optional):</b> When the eggs begin to set at the
+              edges but are still slightly runny in the middle, sprinkle your
+              chosen fillings over one half of the omelette.
             </li>
-            <li class="introduction__step">
-              Fold and serve: As the omelette continues to cook, carefully lift
-              one edge and fold it over the fillings. Let it cook for another
-              minute, then slide it onto a plate.
+            <li class="instructions__step">
+              <b>Fold and serve:</b> As the omelette continues to cook,
+              carefully lift one edge and fold it over the fillings. Let it cook
+              for another minute, then slide it onto a plate.
             </li>
-            <li class="introduction__step">
-              Enjoy: Serve hot, with additional salt and pepper if needed.
+            <li class="instructions__step">
+              <b>Enjoy:</b> Serve hot, with additional salt and pepper if
+              needed.
             </li>
           </ol>
         </section>
@@ -96,25 +99,25 @@
           <table class="nutrition__table">
             <tbody class="nutrition__tbody">
               <tr class="nutrition__row">
-                <th class="nutrition__headRow">Calories</th>
+                <th class="nutrition__head">Calories</th>
                 <td class="nutrition__data">277kcal</td>
               </tr>
               <tr class="nutrition__row">
-                <th class="nutrition__headRow">Carbs</th>
+                <th class="nutrition__head">Carbs</th>
                 <td class="nutrition__data">0g</td>
               </tr>
               <tr class="nutrition__row">
-                <th class="nutrition__headRow">Protein</th>
+                <th class="nutrition__head">Protein</th>
                 <td class="nutrition__data">20g</td>
               </tr>
               <tr class="nutrition__row">
-                <th class="nutrition__headRow">Fat</th>
+                <th class="nutrition__head">Fat</th>
                 <td class="nutrition__data">22g</td>
               </tr>
             </tbody>
           </table>
         </section>
-      </article>
+      </div>
     </main>
   </body>
 </html>
